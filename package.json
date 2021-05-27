@@ -1,0 +1,19 @@
+{
+  "name": "kanoe-base-project",
+  "version": "0.0.0",
+  "description": "base project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kanoe-ui/kanoe-base-project.git"
+  },
+  "author": "Luiz Tanure",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kanoe-ui/kanoe-base-project/issues"
+  },
+  "homepage": "https://github.com/kanoe-ui/kanoe-base-project#readme"
+}
