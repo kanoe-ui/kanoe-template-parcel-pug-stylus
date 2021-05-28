@@ -20,3 +20,14 @@ npm run start
 # build to production
 npm run build
 ```
+
+## Lint
+
+### Styles
+
+```bash
+# all files
+npm run stylus:lint
+# one file
+npm run stylus:lint --file=./file.styl
+```
