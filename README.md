@@ -30,6 +30,14 @@ npm run build
 npm run prettier:fix
 ```
 
+### STYL
+```bash
+# all files
+npm run stylus:fix:all
+# one file
+npm run stylus:fix:file --file=./file.styl
+```
+
 ## Lint
 
 ### Styles
