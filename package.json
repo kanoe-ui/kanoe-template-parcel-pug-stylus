@@ -5,14 +5,17 @@
   "scripts": {
     "start": "parcel serve ./src/index.pug",
     "build": "parcel build ./src/index.pug",
+    "lint:all": "npm run stylus:lint && npm run prettier:check:all",
     "watch:all": "npm run prettier:watch & npm run stylus:watch",
     "prettier:watch": "onchange \"**/*\" -- npm run prettier:fix:file --file={{changed}}",
-    "prettier:fix:all": "npm run prettier:fix:file --file='src/**/*.{md,js,ts,css,json,pug}'",
+    "prettier:check:all": "prettier --check --ignore-unknown '**/*.{md,js,ts,css,json,pug}'",
+    "prettier:fix:all": "npm run prettier:fix:file --file='**/*.{md,js,ts,css,json,pug}'",
     "prettier:fix:file": "prettier --write --ignore-unknown $npm_config_file",
     "stylus:watch": "onchange \"**/*.styl\" -- npm run stylus:fix:file --file={{changed}}",
     "stylus:fix:file": "stylus-supremacy format $npm_config_file --replace --options .stylintrc",
     "stylus:fix:all": "npm run stylus:fix:file --file=./src/**/*.styl",
-    "stylus:lint": "stylint --config .stylintrc $npm_config_file"
+    "stylus:lint": "stylint --config .stylintrc $npm_config_file",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -31,10 +34,14 @@
     "@parcel/transformer-stylus": "^2.0.0-nightly.690",
     "@prettier/plugin-pug": "^1.15.2",
     "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "onchange": "^7.1.0",
     "parcel": "^2.0.0-beta.3.1",
     "prettier": "^2.3.0",
     "stylint": "^2.0.0",
     "stylus-supremacy": "^2.15.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,css,styl,pug,md}": "npm run lint:all"
   }
 }
