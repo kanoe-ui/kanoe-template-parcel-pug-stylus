@@ -1,19 +1,22 @@
 {
-  "name": "kanoe-base-project",
+  "name": "kanoe-template-parcel-pug-stylus",
   "version": "0.0.0",
-  "description": "base project",
-  "main": "index.js",
+  "description": "Template with Parcel, Pug and Stylus",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kanoe-ui/kanoe-base-project.git"
+    "url": "git+https://github.com/kanoe-ui/kanoe-template-parcel-pug-stylus.git"
   },
   "author": "Luiz Tanure",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kanoe-ui/kanoe-base-project/issues"
+    "url": "https://github.com/kanoe-ui/kanoe-template-parcel-pug-stylus/issues"
   },
-  "homepage": "https://github.com/kanoe-ui/kanoe-base-project#readme"
+  "homepage": "https://github.com/kanoe-ui/kanoe-template-parcel-pug-stylus#readme",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.3.1"
+  }
 }
