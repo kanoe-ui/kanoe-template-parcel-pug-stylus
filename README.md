@@ -23,15 +23,27 @@ npm run build
 
 ## Code formatters
 
+### Watch mode
+
+```bash
+# all files
+npm run  fix:watch:all
+```
+
 ### MD, JS, CSS, JSON, PUG
 
 ```bash
+# watch mode
+npm run prettier:fix:watch
 # all files
 npm run prettier:fix
 ```
 
 ### STYL
+
 ```bash
+# watch mode
+npm run stylus:fix:watch
 # all files
 npm run stylus:fix:all
 # one file

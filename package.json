@@ -5,7 +5,11 @@
   "scripts": {
     "start": "parcel serve ./src/index.pug",
     "build": "parcel build ./src/index.pug",
-    "prettier:fix": "prettier --write 'src/**/*.{md,js,ts,css,json,pug}'",
+    "watch:all": "npm run prettier:watch & npm run stylus:watch",
+    "prettier:watch": "onchange \"**/*\" -- npm run prettier:fix:file --file={{changed}}",
+    "prettier:fix:all": "npm run prettier:fix:file --file='src/**/*.{md,js,ts,css,json,pug}'",
+    "prettier:fix:file": "prettier --write --ignore-unknown $npm_config_file",
+    "stylus:watch": "onchange \"**/*.styl\" -- npm run stylus:fix:file --file={{changed}}",
     "stylus:fix:file": "stylus-supremacy format $npm_config_file --replace --options .stylintrc",
     "stylus:fix:all": "npm run stylus:fix:file --file=./src/**/*.styl",
     "stylus:lint": "stylint --config .stylintrc $npm_config_file"
@@ -24,6 +28,7 @@
     "@parcel/transformer-pug": "^2.0.0-nightly.690",
     "@parcel/transformer-stylus": "^2.0.0-nightly.690",
     "@prettier/plugin-pug": "^1.15.2",
+    "onchange": "^7.1.0",
     "parcel": "^2.0.0-beta.3.1",
     "prettier": "^2.3.0",
     "stylint": "^2.0.0",
