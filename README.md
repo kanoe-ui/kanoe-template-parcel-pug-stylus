@@ -21,6 +21,15 @@ npm run start
 npm run build
 ```
 
+## Code formatters
+
+### MD, JS, CSS, JSON, PUG
+
+```bash
+# all files
+npm run prettier:fix
+```
+
 ## Lint
 
 ### Styles
