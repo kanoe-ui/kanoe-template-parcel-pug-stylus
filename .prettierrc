@@ -16,6 +16,23 @@
   "vueIndentScriptAndStyle": false,
   "endOfLine": "lf",
   "embeddedLanguageFormatting": "auto",
-  "overrides": []
+  "overrides": [
+    {
+      "files": "*.pug",
+      "options": {
+        "singleQuote": false,
+        "pugAttributeSeparator": "none",
+        "pugClosingBracketPosition": "new-line",
+        "pugCommentPreserveSpaces": "trim-all",
+        "pugSortAttributes": "asc",
+        "pugSortAttributesEnd": [],
+        "pugWrapAttributesThreshold": 1,
+        "pugEmptyAttributes": "all",
+        "pugEmptyAttributesForceQuotes": [],
+        "pugClassNotation": "literal",
+        "pugIdNotation": "literal"
+      }
+    }
+  ]
 }
 
