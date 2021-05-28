@@ -1,9 +1,10 @@
-# Kanoe template with Parcel
+# Kanoe template
 
 Simple basic project using:
 
 - [Parcel](https://github.com/parcel-bundler/parcel)
 - [PUG](https://github.com/pugjs/pug)
+- [Stylus](https://github.com/stylus/stylus)
 
 ## Installation
 
