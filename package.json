@@ -5,6 +5,7 @@
   "scripts": {
     "start": "parcel serve ./src/index.pug",
     "build": "parcel build ./src/index.pug",
+    "test": "npm run lint:all",
     "lint:all": "npm run stylus:lint && npm run prettier:check:all",
     "watch:all": "npm run prettier:watch & npm run stylus:watch",
     "prettier:watch": "onchange \"**/*\" -- npm run prettier:fix:file --file={{changed}}",
