@@ -10,6 +10,7 @@ Simple basic project using:
 
 ```bash
 npm install
+npx semantic-release-cli setup
 ```
 
 ## Usage
