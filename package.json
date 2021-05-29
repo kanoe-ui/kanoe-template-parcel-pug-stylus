@@ -1,6 +1,6 @@
 {
   "name": "kanoe-template-parcel-pug-stylus",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "description": "Template with Parcel, Pug and Stylus",
   "scripts": {
     "start": "parcel serve ./src/index.pug",
@@ -16,11 +16,12 @@
     "stylus:fix:file": "stylus-supremacy format $npm_config_file --replace --options .stylintrc",
     "stylus:fix:all": "npm run stylus:fix:file --file=./src/**/*.styl",
     "stylus:lint": "stylint --config .stylintrc $npm_config_file",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kanoe-ui/kanoe-template-parcel-pug-stylus.git"
+    "url": "https://github.com/kanoe-ui/kanoe-template-parcel-pug-stylus.git"
   },
   "author": "Luiz Tanure",
   "license": "MIT",
@@ -39,6 +40,7 @@
     "onchange": "^7.1.0",
     "parcel": "^2.0.0-beta.3.1",
     "prettier": "^2.3.0",
+    "semantic-release": "^17.4.3",
     "stylint": "^2.0.0",
     "stylus-supremacy": "^2.15.0"
   },
